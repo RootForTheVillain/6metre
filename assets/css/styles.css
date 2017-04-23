@@ -30,12 +30,11 @@
     text-decoration: underline;
 }
 
-.navbar-right li {
-  padding: 0;
+.contact-info {
   font-size: .9em;
 }
 
-.navbar-right h2 {
+.contact-info h2 {
   font-size: 1.3em;
   font-weight: bold;
   color: #02577c;
