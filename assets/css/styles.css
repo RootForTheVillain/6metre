@@ -1,6 +1,6 @@
 #background-container {
     background: url('../images/background.png') no-repeat 0 100px;
-    background-size: 100%;
+    background-size: cover;
     border: 1px solid transparent;
 }
 
