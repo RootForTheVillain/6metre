@@ -1,5 +1,4 @@
 .jumbotron {
-  /*height: 220px;*/
   height: 215px;
   margin: 0;
 }
@@ -11,7 +10,7 @@ nav,
   box-shadow: 0 15px 15px -15px rgba(0,0,0,0.75);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 766px) {
   nav {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -19,7 +18,7 @@ nav,
   }
 
   .jumbotron {
-    background: url('../images/background.jpg') no-repeat 0 -110px;
+    background: url('../images/background.jpg') no-repeat 0 bottom;
     background-size: cover;
     margin: 110px 0 0 0;
   }
