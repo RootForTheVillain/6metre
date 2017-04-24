@@ -1,8 +1,11 @@
-.jumbotron {
-  height: 215px;
-  padding: 0;
-  margin: 110px 0 0 0;
-  background: url('../images/background.jpg') no-repeat 0 -200px;
+@media (min-width: 992px) {
+  .jumbotron {
+    height: 215px;
+    padding: 0;
+    margin: 110px 0 0 0;
+    background: url('../images/background.jpg') no-repeat 0 -110px;
+    background-size: cover;
+  }
 }
 
 .navbar-shadow {
@@ -20,11 +23,6 @@
 .navbar-inverse .navbar-form {
     background-color: #fff;
     border-color: transparent;
-}
-
-.navbar-inverse .navbar-brand,
-.navbar-inverse .navbar-nav>li>a {
-    color: #fff;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
@@ -81,7 +79,6 @@ footer {
 .phone,
 .email {
   padding: 2px 0 2px 25px;
-  /*background-position: -50px -1000px;*/
 }
 
 .address:hover,
