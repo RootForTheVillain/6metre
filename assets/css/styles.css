@@ -1,21 +1,28 @@
 .jumbotron {
-  height: 220px;
-  padding: 0;
-  margin: 65px 0 0 0;
+  /*height: 220px;*/
+  height: 215px;
+  margin: 0;
+}
+
+nav,
+.navbar-shadow {
+  -webkit-box-shadow: 0 15px 15px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 15px 15px -15px rgba(0,0,0,0.75);
+  box-shadow: 0 15px 15px -15px rgba(0,0,0,0.75);
 }
 
 @media (min-width: 992px) {
+  nav {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
   .jumbotron {
     background: url('../images/background.jpg') no-repeat 0 -110px;
     background-size: cover;
     margin: 110px 0 0 0;
   }
-}
-
-.navbar-shadow {
-  -webkit-box-shadow: 0 15px 15px -15px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0 15px 15px -15px rgba(0,0,0,0.75);
-  box-shadow: 0 15px 15px -15px rgba(0,0,0,0.75);
 }
 
 .navbar-inverse,
