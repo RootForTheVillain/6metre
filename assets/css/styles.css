@@ -1,13 +1,14 @@
 .jumbotron {
-  height: 215px;
+  height: 220px;
   padding: 0;
-  margin: 110px 0 0 0;
+  margin: 65px 0 0 0;
 }
 
 @media (min-width: 992px) {
   .jumbotron {
     background: url('../images/background.jpg') no-repeat 0 -110px;
     background-size: cover;
+    margin: 110px 0 0 0;
   }
 }
 
