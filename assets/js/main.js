@@ -11,8 +11,8 @@ $(window).scroll(function() {
 $(document).ready(function() {
     $('#copyright-date').text(new Date().getFullYear());
 
-    if (window.location.href.indexOf('?') > -1) {
+    /*if (window.location.href.indexOf('?') > -1) {
         $('#background-container').css('background-image', "url('assets/images/background - Copy.png')");
         console.log('god dammit')
-    }
+    }*/
 });
