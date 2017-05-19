@@ -10,9 +10,9 @@ $(window).scroll(function() {
 
 $(document).ready(function() {
     $('#copyright-date').text(new Date().getFullYear());
-    
+
     $.each($('[data-include]'), function() {
-      $(this).load('../includes/' + $(this).data('include') + '.html');
+      $(this).load('assets/includes/' + $(this).data('include') + '.html');
     });
 
     /*if (window.location.href.indexOf('?') > -1) {
