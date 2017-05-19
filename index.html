@@ -51,80 +51,67 @@
 
 <body>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-          <div class="row">
-            <div class="col-sm-7">
-              <h1>
-                <a href="#">
-                  <img src="assets/images/logo.png" width="164" height="81" alt="6Metre Financial">
-                  <span class="hidden">6Metre Financial</span>
-                </a>
-              </h1>
-            </div>
-            <div class="col-sm-5 contact-info">
-              <h2>Bryan E. Knop,​ Financial Advisor</h2>
-              <address>
-                <a href="https://goo.gl/maps/MCow3ATMQcy" target="_blank" class="address">48601 Hayes Rd., Suite C​, Shelby Twp, MI 48315</a>​<br>
-                <a href="tel:+1586.718.2948" class="phone">586.718.2948</a><br>
-                <a href="mailto:bryan@6metrefinancial.com" class="email">bryan@6metrefinancial.com</a>
-              </address>
-            </div>
-          </div>
-      </div>
-  </nav>
-  <div class="jumbotron"></div>
-  <div id="content">
-    <div class="container">
+  <div class="container">
+    <div class="header clearfix">
       <div class="row">
-        <div class="col-md-4">
-          <div class="splash-content-container">
-            <h2 class="splash-content-heading">Why 6 Metre?</h2>
-            <p>
-              <img src="assets/images/splash-icon-boat.png" class="textwrap-icon img-responsive pull-left">
-              <h3 id="pronunciation">
-                <strong>metre</strong> <em>(noun)</em>
-                /<strong class="pronunciation-dark">me·</strong><em>ter</em>/
-              </h3>
-              Why 6Metre Financial? 'Why Not?' The inspiration for the firm name
-              stems from the 6 Metre class of racing sailboats.  'Why Not?' was
-              built in Sweden in 1947 and competed in the 1948 Olympics.  After
-              a well-traveled history, including tenure in New York, the vessel
-              is now owned and captained within the family.
-            </p>
-          </div>
+        <div class="col-sm-4">
+          <h1>
+            <a href="#">
+              <img src="assets/images/logo.png" width="168" height="81" alt="6Metre Financial">
+              <span class="hidden">6Metre Financial</span>
+            </a>
+          </h1>
         </div>
-        <div class="col-md-4">
-          <h2 class="splash-content-heading">Setting Sail.</h2>
-          <p>
-            <img src="assets/images/splash-icon-waves.png" class="textwrap-icon img-responsive pull-left">
-            The 6 Metre class is known for its agility, performance, and
-            adaptability to conditions.  The vision for this firm, founded upon
-            similar principles, was to create a highly sophisticated, client
-            centered financial services firm that leverages industry leading
-            technology to deliver comprehensive financial strategies.
-          </p>
-       </div>
-        <div class="col-md-4">
-          <h2 class="splash-content-heading">Navigation.</h2>
-          <p>
-            <img src="assets/images/splash-icon-compass.png" class="textwrap-icon img-responsive pull-left">
-            The financial services industry and retirement planning landscape
-            can be incredibly complex and overwhelming. Knowing that you have an
-            experienced professional that has your best interests at heart is
-            vital. 6Metre Financial utilizes an open architecture platform,
-            connecting you to an extensive range of companies and products to
-            find the most suitable financial instruments that fit your needs
-            and accomplish your goals.  Transparency and thorough explanation
-            are paramount to forging deeply seeded trust and long lasting client
-            relationships.
-          </p>
+        <div class="col-sm-8">
+          <nav>
+            <ul class="nav nav-pills pull-right">
+              <li role="presentation"><a href="#">Home</a></li>
+              <li role="presentation"><a href="#">About 6Metre Financial</a></li>
+              <li role="presentation"><a href="#">360&deg; Planning</a></li>
+              <li role="presentation"><a href="#">Products &amp; Services</a></li>
+              <li role="presentation"><a href="#">Contact</a></li>
+              <li role="presentation" class="active"><a href="#" class="link-external" target="_blank">Client Portal</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </div> <!-- /container -->
-  </div> <!-- /content -->
+    </div>
 
-<footer>
+    <div id="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="splash-content-container">
+              <h2 class="splash-content-heading">Why 6 Metre?</h2>
+              <p>
+                <!--<h3 id="pronunciation">
+                  <strong>metre</strong> <em>(noun)</em>
+                  /<strong class="pronunciation-dark">me·</strong><em>ter</em>/
+                </h3>-->
+                Why 6Metre Financial? '<a href="">Why Not?</a>' The inspiration for the firm name
+                stems from the 6 Metre class of racing sailboats.  'Why Not?' was
+                built in Sweden in 1947 and competed in the 1948 Olympics.  After
+                a well-traveled history, including tenure in New York, the vessel
+                is now owned and captained within the family.
+              </p>
+              <button type="button" class="btn btn-primary">Learn More</button>
+              <h2 class="splash-content-heading">Setting Sail.</h2>
+              <p>
+                The 6 Metre class is known for its agility, performance, and
+                adaptability to conditions.  The vision for this firm, founded upon
+                similar principles, was to create a highly sophisticated, client
+                centered financial services firm that leverages industry leading
+                technology to deliver comprehensive financial strategies.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">&nbsp;</div>
+        </div>
+      </div> <!-- /container -->
+    </div> <!-- /content -->
+  </div>
+
+<footer class="footer">
   <div class="container">
       <div class="row">
           <div class="col-sm-10">
@@ -162,6 +149,10 @@
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
+  $(document).ready(function() {
+    console.log(document.domain)
+  });
+  /*
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -169,6 +160,7 @@
 
   ga('create', 'UA-97971435-1', 'auto');
   ga('send', 'pageview');
+  */
 </script>
 </body>
 </html>

@@ -1,123 +1,57 @@
-.jumbotron {
-  height: 215px;
-  margin: 0;
+html {
+  min-height: 100%;
 }
 
-nav,
-.navbar-shadow {
-  -webkit-box-shadow: 0 15px 15px -15px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0 15px 15px -15px rgba(0,0,0,0.75);
-  box-shadow: 0 15px 15px -15px rgba(0,0,0,0.75);
-}
-
-@media (min-width: 766px) {
-  nav {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-  }
-
-  .jumbotron {
-    background: url('../images/background.jpg') no-repeat 0 bottom;
-    background-size: cover;
-    margin: 110px 0 0 0;
-  }
-}
-
-.navbar-inverse,
-.navbar-inverse,
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:focus,
-.navbar-inverse .navbar-nav>.active>a:hover,
-.navbar-inverse .navbar-collapse,
-.navbar-inverse .navbar-form {
-    background-color: #fff;
-    border-color: transparent;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover {
-    text-decoration: underline;
-}
-
-.contact-info {
-  font-size: .9em;
-}
-
-.contact-info h2 {
-  font-size: 1.3em;
-  font-weight: bold;
+body {
+  background: url("../images/background.png") no-repeat;
+  background-size: cover;
   color: #02577c;
+  font-family: "Segoe UI", Arial;
 }
 
-#logo {
-  margin: 0;
+body > .container {
+  /*padding-top: 60px;*/
+  padding-top: 5px;
+}
+
+h1 {
   padding: 0;
+  margin: 0;
+}
+
+p>a {
+  color: #f05331;
+  text-decoration: underline;
+}
+
+nav {
+  padding-top: 15px;
+}
+
+.nav>li>a:hover {
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 #content {
-  background-color: #4dbfee;
-  padding-bottom: 50px;
+  margin-top: 50px;
 }
 
-#pronunciation {
-  color: #324871;
-  margin-left: 15px;
-}
-
-.pronunciation-dark {
-  color: #000;
-}
-
-.splash-content-heading {
-  color: white;
-  text-shadow: 1px 1px 1px #000;
-}
-
-.textwrap-icon {
-  margin: 0 10px 0 0;
-}
-
-footer {
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
     font-size: .8em;
-    color: #02577c;
-    background-color: #fff;
-    padding: 25px 0;
-    color: #999;
+    display: none;
 }
 
-.address,
-.phone,
-.email {
-  padding: 2px 0 2px 25px;
-}
 
-.address:hover,
-.phone:hover,
-.email:hover {
-  padding: 2px 0 2px 25px;
-  color: #00aeef;
-}
-
-.address {
-  background: url('../images/business-card-icons-sprite.png') no-repeat 0 -60px;
-}
-
-.phone {
-  background: url('../images/business-card-icons-sprite.png') no-repeat 0 4px;
-}
-
-.email {
-  background: url('../images/business-card-icons-sprite.png') no-repeat 0 -16px;
-}
-
-.address:hover {
-  background-position: 0 -139px;
-}
-
-.phone:hover {
-  background-position: 0 -75px;
-}
-
-.email:hover {
-  background-position: 0 -95px;
+/* -- Splash -- */
+h2.splash-content-heading {
+  font-family: Arial;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px #000;
 }
