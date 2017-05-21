@@ -50,35 +50,39 @@
 </head>
 
 <body id="splash">
+  <!--<nav id="navbar" class="navbar navbar-fixed-top">-->
+  <nav id="navbar" class="navbar">
+        <div class="container">
+          <!--<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>-->
+          <div class="navbar-collapse collapse">
+            <h1 class="logo nav navbar-nav">
+              <a href="#">
+                <img src="assets/images/logo.png" width="168" height="84" alt="6Metre Financial">
+                <span class="hidden">6Metre Financial</span>
+              </a>
+            </h1>
+            <ul class="navbar-nav navbar-right nav nav-pills">
+              <li role="presentation"><a href="#home" class="router-link">Home</a></li>
+              <li role="presentation"><a href="#about-6metre-financial" class="router-link">About 6Metre Financial</a></li>
+              <li role="presentation"><a href="#360-degree-planning" class="router-link">360&deg; Planning</a></li>
+              <li role="presentation"><a href="#products-and-services" class="router-link">Products &amp; Services</a></li>
+              <li role="presentation"><a href="#contact" class="router-link">Contact</a></li>
+              <li role="presentation"><a href="https://wealth.emaplan.com/ema/ria/6metrefinancial" id="client-portal" target="_blank">Client Portal</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
 
-<div class="container">
-  <div class="header clearfix">
-    <div class="row">
-      <div class="col-sm-4">
-        <h1 class="logo">
-          <a href="#">
-            <img src="assets/images/logo.png" width="168" height="84" alt="6Metre Financial">
-            <span class="hidden">6Metre Financial</span>
-          </a>
-        </h1>
-      </div>
-      <div class="col-sm-8">
-        <nav class="navbar-fixed-top">
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation"><a href="#home" class="router-link">Home</a></li>
-            <li role="presentation"><a href="#about-6metre-financial" class="router-link">About 6Metre Financial</a></li>
-            <li role="presentation"><a href="#360-degree-planning" class="router-link">360&deg; Planning</a></li>
-            <li role="presentation"><a href="#products-and-services" class="router-link">Products &amp; Services</a></li>
-            <li role="presentation"><a href="#contact" class="router-link">Contact</a></li>
-            <li role="presentation"><a href="#" class="link-external btn btn-warning" target="_blank">Client Portal</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div><!-- /row -->
-  </div><!-- /header -->
-</div><!-- /container -->
-
-<div data-include="content"></div>
+<div id="content" class="container">
+  <div data-include="content"></div>
+</div>
 
 <footer class="footer">
   <div class="container">

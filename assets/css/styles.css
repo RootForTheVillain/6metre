@@ -3,24 +3,48 @@ html {
 }
 
 body {
-  background: url("../images/background-interior.png") no-repeat;
-  background-size: cover;
-  color: #02577c;
+  background: url("../images/background-interior.png") no-repeat left top #9cd9f4;
+  background-size: contain;
+  color: #333;
   font-family: "Segoe UI", Arial;
 }
 
 body > .container {
   /*padding-top: 60px;*/
-  padding-top: 5px;
 }
 
 h1.logo {
   padding: 0;
-  margin: 0;
+  margin: 3px 0 0 0;
+  width: 168px;
+}
+
+h2 {
+  margin: 50px 0 25px 0;
+  font-weight: bold;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px rgba(0,0,0,0.4);
+  color: white;
+}
+
+h3 {
+  margin-top: 50px;
+  color: #333;
+  text-shadow: 0 1px 3px white;
 }
 
 h4 {
+  margin-top: 25px;
+  color: #02577c;
+}
 
+.navbar-default .navbar-nav>li>a {
+  color: #02577c;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #02577c;
 }
 
 .page-header {
@@ -36,29 +60,59 @@ h4 {
 }
 
 p>a {
-  color: #f05331;
+  color: #00aeef;
   text-decoration: underline;
 }
 
-nav {
-  padding-top: 15px;
+p>a:hover {
+  text-decoration: none;
+}
+
+.navbar-default {
+  background: url("../images/background-interior.png") no-repeat left top #9cd9f4;
+  background-size: cover;
+  border: none;
+}
+
+.nav>li>a:active {
+  background-color: transparent;
+}
+
+.nav>li>a:hover {
+  background-color: #00aeef;
+  color: #fff;
+}
+
+.nav>li.active a,
+.nav>li.active a:hover,
+.nav>li.active a:focus,
+.nav>li.active a:active {
+  background-color: #00aeef;
+  color: #fff;
 }
 
 .navbar-shadow {
-  -webkit-box-shadow: 0 15px 15px -15px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0 15px 15px -15px rgba(0,0,0,0.75);
-  box-shadow: 0 15px 15px -15px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0 15px 15px -15px rgba(0,0,0,0.50);
+  -moz-box-shadow: 0 15px 15px -15px rgba(0,0,0,0.50);
+  box-shadow: 0 15px 15px -15px rgba(0,0,0,0.50);
 }
 
-.nav>li>a:hover,
-.nav>li>a:active,
-.nav>li>a:focus {
-  background-color: transparent;
+.navbar-right {
+  margin-top: 15px;
+}
+
+#client-portal {
+  color: #f26b30;
+  font-weight: bold;
+}
+
+#client-portal:hover {
   text-decoration: underline;
+  background-color: transparent;
 }
 
 #content {
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .footer {
@@ -74,7 +128,7 @@ nav {
 
 /* -- Splash -- */
 #splash {
-  background: url("../images/background.png") no-repeat;
+  background: url("../images/background.png") no-repeat top;
   background-size: cover;
 }
 
@@ -87,25 +141,31 @@ h2.splash-content-heading {
 }
 
 /* -- About Us -- */
-.map-image {
-  margin-left: 50px;
-  margin-bottom: 0;
-}
-
-#aboutOurServices {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.headshot {
-  margin-right: 25px;
-}
-
 figcaption,
 figcaption a {
   color: #333;
   font-style: italic;
   text-align: center;
+  text-decoration: underline;
+}
+
+figcaption a:hover {
+  text-decoration: none;
+}
+
+.headshot {
+  margin-right: 15px;
+}
+
+.about-advisor-list {
+  list-style-type: none;
+}
+
+.experience {
+  font-weight: bold;
+  color: #f36733;
+  font-size: 1.8em;
+  text-shadow: 1px 0 1px #333;
 }
 
 /* -- Contact -- */

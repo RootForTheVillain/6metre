@@ -1,18 +1,19 @@
-$(window).scroll(function() {
+/*$(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
-        $('nav').addClass("navbar-shadow");
+        $('#navbar').addClass("navbar-shadow");
     }
     else {
-        $('nav').removeClass("navbar-shadow");
+        $('#navbar').removeClass("navbar-shadow");
     }
-});
+});*/
 
 $(document).ready(function() {
     $('#copyright-date').text(new Date().getFullYear());
 
     loadPartial(window.location.hash);
     bindRouterLinks();
+    setActiveMenuItem(window.location.hash);
 });
 
 function bindRouterLinks() {
@@ -55,6 +56,20 @@ function initPage(href) {
 
     break;
   }
+
+  setActiveMenuItem(window.location.hash);
+}
+
+function setActiveMenuItem(hash) {
+  $('.navbar-right li').each(function() {
+    var href = $(this).find('a.router-link').attr('href');
+
+    if (href !== undefined && href.toLowerCase() == hash.toLowerCase()) {
+      $(this).addClass('active');
+    } else {
+      $(this).removeClass('active')
+    }
+  });
 }
 
 function dateDiff(date1, date2) {
