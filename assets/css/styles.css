@@ -9,19 +9,30 @@ body {
   font-family: "Segoe UI", Arial;
 }
 
-#splash {
-  background: url("../images/background.png") no-repeat left top;
-  background-size: cover;
-}
-
 body > .container {
   /*padding-top: 60px;*/
   padding-top: 5px;
 }
 
-h1 {
+h1.logo {
   padding: 0;
   margin: 0;
+}
+
+h4 {
+
+}
+
+.page-header {
+    border: none;
+}
+
+.page-header h1 {
+    font-family: Arial;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px #000;
 }
 
 p>a {
@@ -33,7 +44,15 @@ nav {
   padding-top: 15px;
 }
 
-.nav>li>a:hover {
+.navbar-shadow {
+  -webkit-box-shadow: 0 15px 15px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 15px 15px -15px rgba(0,0,0,0.75);
+  box-shadow: 0 15px 15px -15px rgba(0,0,0,0.75);
+}
+
+.nav>li>a:hover,
+.nav>li>a:active,
+.nav>li>a:focus {
   background-color: transparent;
   text-decoration: underline;
 }
@@ -43,19 +62,59 @@ nav {
 }
 
 .footer {
-    position: absolute;
+    /*position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100%;*/
+    margin-top: 250px;
+    padding-top: 50px;
     font-size: .8em;
     color: #f4f4f4;
 }
 
 
 /* -- Splash -- */
+#splash {
+  background: url("../images/background.png") no-repeat;
+  background-size: cover;
+}
+
 h2.splash-content-heading {
   font-family: Arial;
   font-size: 2em;
   font-weight: bold;
   color: #fff;
   text-shadow: 1px 1px #000;
+}
+
+/* -- About Us -- */
+.map-image {
+  margin-left: 50px;
+  margin-bottom: 0;
+}
+
+#aboutOurServices {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.headshot {
+  margin-right: 25px;
+}
+
+figcaption,
+figcaption a {
+  color: #333;
+  font-style: italic;
+  text-align: center;
+}
+
+/* -- Contact -- */
+#success_message{
+  display: none;
+}
+
+.well {
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
