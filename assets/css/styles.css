@@ -177,6 +177,18 @@ figcaption a:hover {
   text-shadow: 1px 0 1px #333;
 }
 
+/* -- Products & Services -- */
+table,
+.table>thead>tr>th,
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+  border-color: #fff;
+}
+
 /* -- Contact -- */
 #success_message{
   display: none;
